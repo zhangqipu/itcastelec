@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>itcast1222elec</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- 2015-08-11添加，系统中添加过滤器  begin -->
+	<filter>
+		<filter-name>filter</filter-name>
+		<filter-class>cn.itcast.elec.filter.LogonFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>filter</filter-name>
+		<url-pattern>*.do</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>filter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	<!--  系统中添加过滤器   end -->
+	
+	<!-- 2015-08-11 添加，定义session的失效时间  30表示的单位是：分钟-->
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	
+	<!-- 添加struts2的过滤器   begin-->
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+	</filter>
+	<!-- 添加struts2的过滤器   end -->
+	
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- ajax校验 -->
+	<servlet>
+		<servlet-name>CheckLogonName</servlet-name>
+		<servlet-class>cn.itcast.elec.servlet.CheckLogonName</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CheckLogonName</servlet-name>
+		<url-pattern>/checkLogonName</url-pattern>
+	</servlet-mapping>
+
+</web-app>
