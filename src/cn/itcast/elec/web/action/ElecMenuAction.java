@@ -71,7 +71,7 @@ public class ElecMenuAction extends BaseAction implements ModelDriven<ElecMenuFo
 		if(elecUser == null){
 			this.addFieldError("error", "您当前的登录名不存在！");
 			return "error";
-		}    
+		}     
 		if(password == null || password.equals("") || !elecUser.getLogonPwd().equals(md5password)){
 			this.addFieldError("error", "您当前输入的密码有误或不存在");
 			return "error";
