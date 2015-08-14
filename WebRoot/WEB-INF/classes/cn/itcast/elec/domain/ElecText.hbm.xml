@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="cn.itcast.elec.domain.ElecText" table="Elec_Text">
+		<id name="textID" type="string">
+			<column name="textID" not-null="true" sql-type="varchar(50)" />
+			<generator class="uuid"></generator>
+		</id>
+		<property name="textName" type="string">
+			<column name="textName" not-null="true" sql-type="varchar(50)" />
+		</property>
+		<property name="textRemark" type="string">
+			<column name="textRemark" sql-type="varchar(50)" />
+		</property>
+
+		<property name="textDate" type="date">
+			<column name="textDate" sql-type="datetime" length="50" />
+		</property>
+	</class>
+</hibernate-mapping>
