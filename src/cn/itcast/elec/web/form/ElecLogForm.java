@@ -16,6 +16,15 @@ public class ElecLogForm implements Serializable {
 	private String OpeTime;	//操作时间
 	private String Details;		//操作明细
 	
+	//定义String类型的数组对象，用于获取待删除的日志ID
+	private String [] logid;
+	
+	public String[] getLogid() {
+		return logid;
+	}
+	public void setLogid(String[] logid) {
+		this.logid = logid;
+	}
 	public String getLogID() {
 		return LogID;
 	}

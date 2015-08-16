@@ -122,6 +122,10 @@
 			<result name="home">
 				/WEB-INF/page/system/logIndex.jsp
 			</result>
+			<result name="delete" type="redirectAction">
+				<param name="actionName">elecLogAction_home</param>
+				<param name="namespace">/system</param>
+			</result>
 		</action>
 
 

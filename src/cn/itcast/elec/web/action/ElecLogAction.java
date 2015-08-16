@@ -34,4 +34,20 @@ public class ElecLogAction extends BaseAction implements ModelDriven<ElecLogForm
 		request.setAttribute("logList", list);
 		return "home";
 	}
+	
+	/**
+	 * @Name: delete
+	 * @Description : 删除查询得到的日志列表信息 
+	 * @author: 屈卞忠
+	 * @version : V1.0.0 版本
+	 * @Create Date ： 2015-08-16
+	 * @Parameters: null
+	 * @return: String delete 重定向到logIndex.jsp
+	 */
+	public String delete(){
+		//第三种方式
+		String logid [] = request.getParameterValues("logID");
+		elecLogService.deleteElecLogByLogIDs(elecLogForm);
+		return "delete";
+	}
 }

@@ -45,7 +45,7 @@ public class ElecLogServiceImpl implements IElecLogService{
 	public void saveElecLog(HttpServletRequest request, String details) {
 		ElecLog elecLog = new ElecLog();
 		elecLog.setIpAddress(request.getRemoteAddr());//IP地址
-		
+
 		ElecUser elecUser = (ElecUser) request.getSession().getAttribute("globle_user");
 		elecLog.setOpeName(elecUser.getUserName());//操作者
 		elecLog.setOpeTime(new Date());//操作时间
@@ -103,5 +103,32 @@ public class ElecLogServiceImpl implements IElecLogService{
 			formList.add(elecLogForm);
 		}
 		return formList;
+	}
+
+	/**
+	 * @Name: deleteElecLogByLogIDs
+	 * @Description : 使用日志ID，删除日志列表信息
+	 * @author ： 屈卞忠
+	 * @version :V1.0.0(版本号)
+	 * @Create Date ：2015-08-16
+	 * @Parameters: ElecLogForm elecLogForm 用于存放日志ID的数组
+	 * @return: null
+	 */
+	@Override
+	@Transactional(isolation=Isolation.DEFAULT,propagation=Propagation.REQUIRED,readOnly=false)
+	public void deleteElecLogByLogIDs(ElecLogForm elecLogForm) {
+		//第一种方式
+		// String [] logids = elecLogForm.getLogid();
+		// elecLogDao.deleteObjectByIds(logids);
+		//第二种方式
+		String logID = elecLogForm.getLogID();
+		String [] logids = logID.split(",");
+		for(int i = 0;logids != null && i<logids.length;i++){
+			String logid = logids[i];
+			logids[i] = logid.trim();
+		}
+
+		elecLogDao.deleteObjectByIds(logids);
+
 	}
 }

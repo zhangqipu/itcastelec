@@ -13,4 +13,6 @@ public interface IElecLogService {
 
 	List<ElecLogForm> findElecLogListByCondition(ElecLogForm elecLogForm);
 
+	void deleteElecLogByLogIDs(ElecLogForm elecLogForm);
+
 }

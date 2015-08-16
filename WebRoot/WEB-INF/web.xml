@@ -8,7 +8,7 @@
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
-	<!-- 2015-08-11添加，系统中添加过滤器  begin -->
+	<!-- 2015-08-11添加，系统中添加过滤器 begin -->
 	<filter>
 		<filter-name>filter</filter-name>
 		<filter-class>cn.itcast.elec.filter.LogonFilter</filter-class>
@@ -21,24 +21,24 @@
 		<filter-name>filter</filter-name>
 		<url-pattern>*.jsp</url-pattern>
 	</filter-mapping>
-	<!--  系统中添加过滤器   end -->
-	
-	<!-- 2015-08-11 添加，定义session的失效时间  30表示的单位是：分钟-->
+	<!-- 系统中添加过滤器 end -->
+
+	<!-- 2015-08-11 添加，定义session的失效时间 30表示的单位是：分钟 -->
 	<session-config>
 		<session-timeout>30</session-timeout>
 	</session-config>
-	
-	<!-- 添加struts2的过滤器   begin-->
+
+	<!-- 添加struts2的过滤器 begin -->
 	<filter>
 		<filter-name>struts2</filter-name>
 		<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
 	</filter>
-	<!-- 添加struts2的过滤器   end -->
-	
+
 	<filter-mapping>
 		<filter-name>struts2</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	<!-- 添加struts2的过滤器 end -->
 
 	<!-- ajax校验 -->
 	<servlet>
