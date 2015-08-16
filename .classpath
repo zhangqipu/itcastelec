@@ -14,6 +14,42 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/backport-util-concurrent.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/common-annotations.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/commons-beanutils-1.8.3.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/commons-io-1.3.2.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/commons-lang-2.5.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/commons-logging.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/ehcache-1.5.0.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/freemarker-2.3.15.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/hibernate3.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/javassist-3.9.0.GA.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/jcommon-1.0.16.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/jstl.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/junit-4.8.2.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/morph-1.1.1.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/morph-sandbox-1.1.1.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/mysql-connector-java-5.1.10-bin.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/ognl-2.7.3.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/pinyin4j-2.5.0.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/slf4j-log4j12.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/spring.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/standard.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/struts2-core-2.1.8.1.jar"/>
+	<classpathentry kind="lib" path="H:/java自学网（javazx.com）国家电力项目实战(共九天)/国家电力项目_第一天/lib包/全/xwork-core-2.1.6.jar"/>
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>

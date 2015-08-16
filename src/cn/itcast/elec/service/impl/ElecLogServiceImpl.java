@@ -69,7 +69,7 @@ public class ElecLogServiceImpl implements IElecLogService{
 		List<String> paramsList = new ArrayList<String>();
 		if(elecLogForm != null && elecLogForm.getOpeName() != null && !elecLogForm.getOpeName().equals("")){
 			hqlWhere += "and o.OpeName like ?";
-			paramsList.add(elecLogForm.getOpeName());
+			paramsList.add("%"+elecLogForm.getOpeName()+"%");
 		}
 		Object [] params = paramsList.toArray();
 		LinkedHashMap<String, String> orderby = new LinkedHashMap<String, String>();
